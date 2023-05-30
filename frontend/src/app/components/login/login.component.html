@@ -1,0 +1,26 @@
+<p>login works!</p>
+<form id="login-form" >
+
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" name="email" [(ngModel)]="email" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" name="username" [(ngModel)]="username" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" name="password" [(ngModel)]="password" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input matInput placeholder="ConfirmPassword" name="confirm_password" [(ngModel)]="confirmPassword" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="login()">Login</button>
+
+</form>
